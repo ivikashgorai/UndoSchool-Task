@@ -3,6 +3,9 @@ package com.elasticsearch.spring.UndoSchool.controllers;
 import com.elasticsearch.spring.UndoSchool.dto.CourseFilterParams;
 import com.elasticsearch.spring.UndoSchool.entity.CourseDocument;
 import com.elasticsearch.spring.UndoSchool.service.CourseSearchService;
+import lombok.extern.java.Log;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -16,6 +19,7 @@ import java.util.Map;
 @RestController
 @RequestMapping("/api/search")
 public class CourseSearchController {
+    private Logger logger = LoggerFactory.getLogger(CourseSearchController.class);
 
     private final CourseSearchService service;
 
@@ -26,7 +30,7 @@ public class CourseSearchController {
     @GetMapping
     public Map<String, Object> searchCourses(CourseFilterParams filters, @RequestParam(required = false) String q) throws IOException {
         List<CourseDocument> results = service.searchCourses(q, filters);
-
+        logger.info(q);
         Map<String, Object> response = new HashMap<>();
         response.put("total", results.size());
         response.put("courses", results);

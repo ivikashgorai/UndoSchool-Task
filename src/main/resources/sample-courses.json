@@ -834,18 +834,18 @@
   },
   {
     "id": "course-50",
-    "title": "Digital Citizenship",
-    "description": "This is a detailed course about Digital Citizenship.",
-    "category": "History",
-    "type": "CLUB",
-    "gradeRange": "2nd\u20134th",
-    "minAge": 7,
-    "maxAge": 13,
-    "price": 72.6,
-    "nextSessionDate": "2025-09-22T00:00:00Z",
+    "title": "Dinosaurs 101",
+    "description": "Explore the ancient world of dinosaurs, their habitats, and extinction in this interactive science course.",
+    "category": "Science",
+    "type": "COURSE",
+    "gradeRange": "3rd–5th",
+    "minAge": 8,
+    "maxAge": 12,
+    "price": 110.5,
+    "nextSessionDate": "2025-09-15T00:00:00Z",
     "suggest": {
       "input": [
-        "Digital Citizenship"
+        "Dinosaurs 101"
       ]
     }
   }

@@ -32,9 +32,23 @@ public class CourseSearchService {
         List<Query> filter = new ArrayList<>();
 
         if (query != null && !query.isEmpty()) {
-            must.add(QueryBuilders.multiMatch(m -> m
-                    .fields("title", "description")
-                    .query(query)
+
+            must.add(QueryBuilders.bool(b -> b
+                    .should(QueryBuilders.match(m -> m
+                            .field("title")
+                            .query(query)
+                            .fuzziness("AUTO")
+                    ))
+
+            ));
+
+            must.add(QueryBuilders.bool(b -> b
+                    .should(QueryBuilders.match(m -> m
+                            .field("description")
+                            .query(query)
+                            .fuzziness("AUTO")
+                    ))
+
             ));
         }
 
