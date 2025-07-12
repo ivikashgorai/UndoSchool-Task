@@ -3,7 +3,6 @@ package com.elasticsearch.spring.UndoSchool.controllers;
 import com.elasticsearch.spring.UndoSchool.dto.CourseFilterParams;
 import com.elasticsearch.spring.UndoSchool.entity.CourseDocument;
 import com.elasticsearch.spring.UndoSchool.service.CourseSearchService;
-import org.springframework.data.elasticsearch.core.SearchHit;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -33,5 +32,11 @@ public class CourseSearchController {
         response.put("courses", results);
         return response;
     }
+
+    @GetMapping("/suggest")
+    public List<String> suggestCourses(@RequestParam String q) throws IOException {
+        return service.suggestCourseTitles(q);
+    }
+
 }
 

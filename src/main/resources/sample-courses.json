@@ -9,7 +9,12 @@
     "minAge": 9,
     "maxAge": 13,
     "price": 95.34,
-    "nextSessionDate": "2025-08-02T00:00:00Z"
+    "nextSessionDate": "2025-08-02T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Math Explorers"
+      ]
+    }
   },
   {
     "id": "course-2",
@@ -21,7 +26,12 @@
     "minAge": 9,
     "maxAge": 13,
     "price": 152.79,
-    "nextSessionDate": "2025-10-25T00:00:00Z"
+    "nextSessionDate": "2025-10-25T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Science Wizards"
+      ]
+    }
   },
   {
     "id": "course-3",
@@ -33,7 +43,12 @@
     "minAge": 9,
     "maxAge": 12,
     "price": 174.02,
-    "nextSessionDate": "2025-08-30T00:00:00Z"
+    "nextSessionDate": "2025-08-30T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Creative Art Studio"
+      ]
+    }
   },
   {
     "id": "course-4",
@@ -45,7 +60,12 @@
     "minAge": 7,
     "maxAge": 13,
     "price": 172.37,
-    "nextSessionDate": "2025-08-10T00:00:00Z"
+    "nextSessionDate": "2025-08-10T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Coding for Kids"
+      ]
+    }
   },
   {
     "id": "course-5",
@@ -57,7 +77,12 @@
     "minAge": 8,
     "maxAge": 13,
     "price": 95.81,
-    "nextSessionDate": "2025-10-22T00:00:00Z"
+    "nextSessionDate": "2025-10-22T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Nature Club"
+      ]
+    }
   },
   {
     "id": "course-6",
@@ -69,7 +94,12 @@
     "minAge": 8,
     "maxAge": 13,
     "price": 169.91,
-    "nextSessionDate": "2025-08-01T00:00:00Z"
+    "nextSessionDate": "2025-08-01T00:00:00Z",
+    "suggest": {
+      "input": [
+        "History Time Travelers"
+      ]
+    }
   },
   {
     "id": "course-7",
@@ -81,7 +111,12 @@
     "minAge": 9,
     "maxAge": 11,
     "price": 157.71,
-    "nextSessionDate": "2025-08-14T00:00:00Z"
+    "nextSessionDate": "2025-08-14T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Junior Engineers"
+      ]
+    }
   },
   {
     "id": "course-8",
@@ -93,7 +128,12 @@
     "minAge": 6,
     "maxAge": 11,
     "price": 52.65,
-    "nextSessionDate": "2025-08-10T00:00:00Z"
+    "nextSessionDate": "2025-08-10T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Storytelling & Drama"
+      ]
+    }
   },
   {
     "id": "course-9",
@@ -105,7 +145,12 @@
     "minAge": 10,
     "maxAge": 12,
     "price": 146.3,
-    "nextSessionDate": "2025-09-22T00:00:00Z"
+    "nextSessionDate": "2025-09-22T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Chess Champions"
+      ]
+    }
   },
   {
     "id": "course-10",
@@ -117,7 +162,12 @@
     "minAge": 10,
     "maxAge": 14,
     "price": 190.54,
-    "nextSessionDate": "2025-09-11T00:00:00Z"
+    "nextSessionDate": "2025-09-11T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Space Camp"
+      ]
+    }
   },
   {
     "id": "course-11",
@@ -129,7 +179,12 @@
     "minAge": 8,
     "maxAge": 11,
     "price": 62.1,
-    "nextSessionDate": "2025-09-12T00:00:00Z"
+    "nextSessionDate": "2025-09-12T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Robotics 101"
+      ]
+    }
   },
   {
     "id": "course-12",
@@ -141,7 +196,12 @@
     "minAge": 10,
     "maxAge": 11,
     "price": 138.55,
-    "nextSessionDate": "2025-08-18T00:00:00Z"
+    "nextSessionDate": "2025-08-18T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Young Writers Workshop"
+      ]
+    }
   },
   {
     "id": "course-13",
@@ -153,7 +213,12 @@
     "minAge": 8,
     "maxAge": 14,
     "price": 83.26,
-    "nextSessionDate": "2025-08-05T00:00:00Z"
+    "nextSessionDate": "2025-08-05T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Global Cultures"
+      ]
+    }
   },
   {
     "id": "course-14",
@@ -165,7 +230,12 @@
     "minAge": 7,
     "maxAge": 14,
     "price": 122.03,
-    "nextSessionDate": "2025-09-04T00:00:00Z"
+    "nextSessionDate": "2025-09-04T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Digital Art"
+      ]
+    }
   },
   {
     "id": "course-15",
@@ -177,7 +247,12 @@
     "minAge": 8,
     "maxAge": 13,
     "price": 88.58,
-    "nextSessionDate": "2025-09-06T00:00:00Z"
+    "nextSessionDate": "2025-09-06T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Music Makers"
+      ]
+    }
   },
   {
     "id": "course-16",
@@ -189,7 +264,12 @@
     "minAge": 10,
     "maxAge": 12,
     "price": 189.9,
-    "nextSessionDate": "2025-10-12T00:00:00Z"
+    "nextSessionDate": "2025-10-12T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Basketball Basics"
+      ]
+    }
   },
   {
     "id": "course-17",
@@ -201,7 +281,12 @@
     "minAge": 9,
     "maxAge": 11,
     "price": 122.22,
-    "nextSessionDate": "2025-08-17T00:00:00Z"
+    "nextSessionDate": "2025-08-17T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Eco Warriors"
+      ]
+    }
   },
   {
     "id": "course-18",
@@ -213,7 +298,12 @@
     "minAge": 6,
     "maxAge": 13,
     "price": 74.91,
-    "nextSessionDate": "2025-09-18T00:00:00Z"
+    "nextSessionDate": "2025-09-18T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Fun with Physics"
+      ]
+    }
   },
   {
     "id": "course-19",
@@ -225,7 +315,12 @@
     "minAge": 10,
     "maxAge": 12,
     "price": 158.63,
-    "nextSessionDate": "2025-10-05T00:00:00Z"
+    "nextSessionDate": "2025-10-05T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Math Olympiad Prep"
+      ]
+    }
   },
   {
     "id": "course-20",
@@ -237,7 +332,12 @@
     "minAge": 8,
     "maxAge": 11,
     "price": 102.75,
-    "nextSessionDate": "2025-08-29T00:00:00Z"
+    "nextSessionDate": "2025-08-29T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Biology Basics"
+      ]
+    }
   },
   {
     "id": "course-21",
@@ -249,7 +349,12 @@
     "minAge": 8,
     "maxAge": 13,
     "price": 140.03,
-    "nextSessionDate": "2025-09-12T00:00:00Z"
+    "nextSessionDate": "2025-09-12T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Stop Motion Animation"
+      ]
+    }
   },
   {
     "id": "course-22",
@@ -261,7 +366,12 @@
     "minAge": 8,
     "maxAge": 11,
     "price": 72.08,
-    "nextSessionDate": "2025-08-06T00:00:00Z"
+    "nextSessionDate": "2025-08-06T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Astronomy Nights"
+      ]
+    }
   },
   {
     "id": "course-23",
@@ -273,7 +383,12 @@
     "minAge": 10,
     "maxAge": 12,
     "price": 190.48,
-    "nextSessionDate": "2025-08-24T00:00:00Z"
+    "nextSessionDate": "2025-08-24T00:00:00Z",
+    "suggest": {
+      "input": [
+        "French for Beginners"
+      ]
+    }
   },
   {
     "id": "course-24",
@@ -285,7 +400,12 @@
     "minAge": 9,
     "maxAge": 13,
     "price": 78.35,
-    "nextSessionDate": "2025-09-20T00:00:00Z"
+    "nextSessionDate": "2025-09-20T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Painting with Watercolors"
+      ]
+    }
   },
   {
     "id": "course-25",
@@ -297,7 +417,12 @@
     "minAge": 9,
     "maxAge": 13,
     "price": 176.54,
-    "nextSessionDate": "2025-08-04T00:00:00Z"
+    "nextSessionDate": "2025-08-04T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Keyboard for Kids"
+      ]
+    }
   },
   {
     "id": "course-26",
@@ -309,7 +434,12 @@
     "minAge": 9,
     "maxAge": 11,
     "price": 50.48,
-    "nextSessionDate": "2025-09-25T00:00:00Z"
+    "nextSessionDate": "2025-09-25T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Soccer Training"
+      ]
+    }
   },
   {
     "id": "course-27",
@@ -321,7 +451,12 @@
     "minAge": 6,
     "maxAge": 13,
     "price": 194.83,
-    "nextSessionDate": "2025-09-19T00:00:00Z"
+    "nextSessionDate": "2025-09-19T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Debate Club"
+      ]
+    }
   },
   {
     "id": "course-28",
@@ -333,7 +468,12 @@
     "minAge": 7,
     "maxAge": 12,
     "price": 61.79,
-    "nextSessionDate": "2025-09-28T00:00:00Z"
+    "nextSessionDate": "2025-09-28T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Leadership Lab"
+      ]
+    }
   },
   {
     "id": "course-29",
@@ -345,7 +485,12 @@
     "minAge": 8,
     "maxAge": 12,
     "price": 119.09,
-    "nextSessionDate": "2025-08-14T00:00:00Z"
+    "nextSessionDate": "2025-08-14T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Financial Literacy"
+      ]
+    }
   },
   {
     "id": "course-30",
@@ -357,7 +502,12 @@
     "minAge": 7,
     "maxAge": 13,
     "price": 77.66,
-    "nextSessionDate": "2025-10-09T00:00:00Z"
+    "nextSessionDate": "2025-10-09T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Drama and Stage"
+      ]
+    }
   },
   {
     "id": "course-31",
@@ -369,7 +519,12 @@
     "minAge": 10,
     "maxAge": 12,
     "price": 82.61,
-    "nextSessionDate": "2025-09-23T00:00:00Z"
+    "nextSessionDate": "2025-09-23T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Python Programming"
+      ]
+    }
   },
   {
     "id": "course-32",
@@ -381,7 +536,12 @@
     "minAge": 9,
     "maxAge": 14,
     "price": 96.96,
-    "nextSessionDate": "2025-09-13T00:00:00Z"
+    "nextSessionDate": "2025-09-13T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Chemistry Experiments"
+      ]
+    }
   },
   {
     "id": "course-33",
@@ -393,7 +553,12 @@
     "minAge": 7,
     "maxAge": 14,
     "price": 126.49,
-    "nextSessionDate": "2025-09-14T00:00:00Z"
+    "nextSessionDate": "2025-09-14T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Creative Writing"
+      ]
+    }
   },
   {
     "id": "course-34",
@@ -405,7 +570,12 @@
     "minAge": 8,
     "maxAge": 11,
     "price": 141.87,
-    "nextSessionDate": "2025-08-06T00:00:00Z"
+    "nextSessionDate": "2025-08-06T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Inventors Club"
+      ]
+    }
   },
   {
     "id": "course-35",
@@ -417,7 +587,12 @@
     "minAge": 10,
     "maxAge": 12,
     "price": 66.83,
-    "nextSessionDate": "2025-08-30T00:00:00Z"
+    "nextSessionDate": "2025-08-30T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Cultural Dance"
+      ]
+    }
   },
   {
     "id": "course-36",
@@ -429,7 +604,12 @@
     "minAge": 10,
     "maxAge": 14,
     "price": 105.75,
-    "nextSessionDate": "2025-09-30T00:00:00Z"
+    "nextSessionDate": "2025-09-30T00:00:00Z",
+    "suggest": {
+      "input": [
+        "3D Modeling"
+      ]
+    }
   },
   {
     "id": "course-37",
@@ -441,7 +621,12 @@
     "minAge": 9,
     "maxAge": 11,
     "price": 136.97,
-    "nextSessionDate": "2025-10-10T00:00:00Z"
+    "nextSessionDate": "2025-10-10T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Machine Learning Intro"
+      ]
+    }
   },
   {
     "id": "course-38",
@@ -453,7 +638,12 @@
     "minAge": 9,
     "maxAge": 13,
     "price": 154.5,
-    "nextSessionDate": "2025-10-02T00:00:00Z"
+    "nextSessionDate": "2025-10-02T00:00:00Z",
+    "suggest": {
+      "input": [
+        "AI for Kids"
+      ]
+    }
   },
   {
     "id": "course-39",
@@ -465,7 +655,12 @@
     "minAge": 7,
     "maxAge": 14,
     "price": 51.53,
-    "nextSessionDate": "2025-10-25T00:00:00Z"
+    "nextSessionDate": "2025-10-25T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Magic of Numbers"
+      ]
+    }
   },
   {
     "id": "course-40",
@@ -477,7 +672,12 @@
     "minAge": 10,
     "maxAge": 13,
     "price": 90.59,
-    "nextSessionDate": "2025-09-11T00:00:00Z"
+    "nextSessionDate": "2025-09-11T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Poetry in Motion"
+      ]
+    }
   },
   {
     "id": "course-41",
@@ -489,7 +689,12 @@
     "minAge": 7,
     "maxAge": 12,
     "price": 147.76,
-    "nextSessionDate": "2025-09-05T00:00:00Z"
+    "nextSessionDate": "2025-09-05T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Rocket Science"
+      ]
+    }
   },
   {
     "id": "course-42",
@@ -501,7 +706,12 @@
     "minAge": 10,
     "maxAge": 11,
     "price": 120.91,
-    "nextSessionDate": "2025-10-16T00:00:00Z"
+    "nextSessionDate": "2025-10-16T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Environment Explorers"
+      ]
+    }
   },
   {
     "id": "course-43",
@@ -513,7 +723,12 @@
     "minAge": 10,
     "maxAge": 11,
     "price": 156.8,
-    "nextSessionDate": "2025-09-09T00:00:00Z"
+    "nextSessionDate": "2025-09-09T00:00:00Z",
+    "suggest": {
+      "input": [
+        "World Geography"
+      ]
+    }
   },
   {
     "id": "course-44",
@@ -525,7 +740,12 @@
     "minAge": 7,
     "maxAge": 14,
     "price": 62.31,
-    "nextSessionDate": "2025-09-09T00:00:00Z"
+    "nextSessionDate": "2025-09-09T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Public Speaking"
+      ]
+    }
   },
   {
     "id": "course-45",
@@ -537,7 +757,12 @@
     "minAge": 9,
     "maxAge": 11,
     "price": 89.67,
-    "nextSessionDate": "2025-10-12T00:00:00Z"
+    "nextSessionDate": "2025-10-12T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Comic Creation"
+      ]
+    }
   },
   {
     "id": "course-46",
@@ -549,7 +774,12 @@
     "minAge": 6,
     "maxAge": 12,
     "price": 72.47,
-    "nextSessionDate": "2025-10-13T00:00:00Z"
+    "nextSessionDate": "2025-10-13T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Yoga and Mindfulness"
+      ]
+    }
   },
   {
     "id": "course-47",
@@ -561,7 +791,12 @@
     "minAge": 8,
     "maxAge": 11,
     "price": 155.24,
-    "nextSessionDate": "2025-10-27T00:00:00Z"
+    "nextSessionDate": "2025-10-27T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Spanish Starter"
+      ]
+    }
   },
   {
     "id": "course-48",
@@ -573,7 +808,12 @@
     "minAge": 6,
     "maxAge": 13,
     "price": 182.05,
-    "nextSessionDate": "2025-08-09T00:00:00Z"
+    "nextSessionDate": "2025-08-09T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Game Design"
+      ]
+    }
   },
   {
     "id": "course-49",
@@ -585,7 +825,12 @@
     "minAge": 7,
     "maxAge": 12,
     "price": 137.74,
-    "nextSessionDate": "2025-09-17T00:00:00Z"
+    "nextSessionDate": "2025-09-17T00:00:00Z",
+    "suggest": {
+      "input": [
+        "App Development"
+      ]
+    }
   },
   {
     "id": "course-50",
@@ -597,6 +842,11 @@
     "minAge": 7,
     "maxAge": 13,
     "price": 72.6,
-    "nextSessionDate": "2025-09-22T00:00:00Z"
+    "nextSessionDate": "2025-09-22T00:00:00Z",
+    "suggest": {
+      "input": [
+        "Digital Citizenship"
+      ]
+    }
   }
 ]

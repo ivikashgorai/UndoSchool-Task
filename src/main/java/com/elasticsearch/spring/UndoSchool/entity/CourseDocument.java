@@ -1,5 +1,6 @@
 package com.elasticsearch.spring.UndoSchool.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -10,9 +11,7 @@ import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 import org.springframework.data.elasticsearch.core.suggest.Completion;
 
-
-import java.time.Instant;
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Document(indexName = "courses")
 @Data
 @AllArgsConstructor
@@ -48,5 +47,6 @@ public class CourseDocument {
     @Field(type = FieldType.Date)
     private String nextSessionDate;
 
-
+    @CompletionField(maxInputLength = 100)
+    private Completion suggest;
 }

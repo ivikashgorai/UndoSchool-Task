@@ -15,7 +15,6 @@ import jakarta.annotation.Nullable;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
-import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,37 +28,57 @@ public class CourseSearchService {
     }
 
     public List<CourseDocument> searchCourses(@Nullable String query, CourseFilterParams filters) throws IOException {
-
         List<Query> must = new ArrayList<>();
         List<Query> filter = new ArrayList<>();
 
-        // Full-text search on title and description
         if (query != null && !query.isEmpty()) {
             must.add(QueryBuilders.multiMatch(m -> m
                     .fields("title", "description")
-                    .query(query)));
+                    .query(query)
+            ));
         }
 
-        // Filters
         if (filters.getCategory() != null) {
             filter.add(QueryBuilders.term(t -> t
-                    .field("category.keyword")
-                    .value(filters.getCategory())));
+                    .field("category")
+                    .value(filters.getCategory())
+            ));
         }
 
         if (filters.getType() != null) {
             filter.add(QueryBuilders.term(t -> t
-                    .field("type.keyword")
-                    .value(filters.getType())));
-        }
-
-        if (filters.getMinAge() != null || filters.getMaxAge() != null) {
-            filter.add(QueryBuilders.range(r -> r
-                    .field("minAge")
-                    .gte(filters.getMinAge() != null ? JsonData.of(filters.getMinAge()) : null)
-                    .lte(filters.getMaxAge() != null ? JsonData.of(filters.getMaxAge()) : null)
+                    .field("type")
+                    .value(filters.getType())
             ));
         }
+
+        if (filters.getMinAge() != null && filters.getMaxAge() != null) {
+            filter.add(QueryBuilders.range(r -> r
+                    .field("minAge")
+                    .gte(JsonData.of(filters.getMinAge()))
+            ));
+            filter.add(QueryBuilders.range(r -> r
+                    .field("maxAge")
+                    .lte(JsonData.of(filters.getMaxAge()))
+            ));
+        }
+
+        if (filters.getMinAge() != null) {
+            // course.minAge must be >= filter.minAge
+            filter.add(QueryBuilders.range(r -> r
+                    .field("minAge")
+                    .gte(JsonData.of(filters.getMinAge()))
+            ));
+        }
+
+        if (filters.getMaxAge() != null) {
+            // course.maxAge must be <= filter.maxAge
+            filter.add(QueryBuilders.range(r -> r
+                    .field("maxAge")
+                    .lte(JsonData.of(filters.getMaxAge()))
+            ));
+        }
+
 
 
         if (filters.getMinPrice() != null || filters.getMaxPrice() != null) {
@@ -70,7 +89,6 @@ public class CourseSearchService {
             ));
         }
 
-
         if (filters.getStartDate() != null) {
             filter.add(QueryBuilders.range(r -> r
                     .field("nextSessionDate")
@@ -78,39 +96,60 @@ public class CourseSearchService {
             ));
         }
 
-
-
         BoolQuery boolQuery = QueryBuilders.bool()
                 .must(must)
                 .filter(filter)
                 .build();
 
+        String sortField = switch (filters.getSort()) {
+            case "priceAsc", "priceDesc" -> "price";
+            default -> "nextSessionDate";
+        };
 
-        // Build request
-        String sortFieldValue;
-        SortOrder sortOrderValue;
+        SortOrder sortOrder = switch (filters.getSort()) {
+            case "priceDesc" -> SortOrder.Desc;
+            default -> SortOrder.Asc;
+        };
 
-        if ("priceAsc".equals(filters.getSort())) {
-            sortFieldValue = "price";
-            sortOrderValue = SortOrder.Asc;
-        } else if ("priceDesc".equals(filters.getSort())) {
-            sortFieldValue = "price";
-            sortOrderValue = SortOrder.Desc;
-        } else {
-            sortFieldValue = "nextSessionDate";
-            sortOrderValue = SortOrder.Asc;
-        }
+        int from = filters.getPage() * filters.getSize();
 
-// Now these are effectively final
         SearchRequest request = SearchRequest.of(s -> s
                 .index("courses")
                 .query(q -> q.bool(boolQuery))
-                .from(filters.getPage() * filters.getSize())
+                .from(from)
                 .size(filters.getSize())
-                .sort(so -> so.field(f -> f.field(sortFieldValue).order(sortOrderValue)))
+                .sort(so -> so.field(f -> f.field(sortField).order(sortOrder)))
         );
 
         SearchResponse<CourseDocument> response = elasticsearchClient.search(request, CourseDocument.class);
-        return response.hits().hits().stream().map(Hit::source).toList();
+        return response.hits().hits().stream()
+                .map(Hit::source)
+                .toList();
     }
+
+
+    public List<String> suggestCourseTitles(String prefix) throws IOException {
+        var response = elasticsearchClient.search(s -> s
+                        .index("courses")
+                        .suggest(sg -> sg
+                                .suggesters("course-suggest", s1 -> s1
+                                        .prefix(prefix)
+                                        .completion(c -> c
+                                                .field("suggest")
+                                                .skipDuplicates(true)
+                                                .size(10)
+                                        )
+                                )
+                        ),
+                Void.class
+        );
+
+        return response.suggest()
+                .get("course-suggest")
+                .stream()
+                .flatMap(suggestion -> suggestion.completion().options().stream())
+                .map(option -> option.text())
+                .toList();
+    }
+
 }
