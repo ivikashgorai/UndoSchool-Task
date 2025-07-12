@@ -48,7 +48,5 @@ public class CourseDocument {
     @Field(type = FieldType.Date)
     private String nextSessionDate;
 
-    @CompletionField(maxInputLength = 100)
-    private Completion suggest;
 
 }

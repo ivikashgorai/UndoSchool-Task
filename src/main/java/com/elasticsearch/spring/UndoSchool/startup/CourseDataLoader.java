@@ -34,9 +34,6 @@ public class CourseDataLoader {
 
         CourseDocument[] courses = objectMapper.readValue(is, CourseDocument[].class);
 
-        for (CourseDocument course : courses) {
-            course.setSuggest(new Completion(List.of(course.getTitle())));
-        }
 
         courseRepository.saveAll(Arrays.asList(courses));
     }
